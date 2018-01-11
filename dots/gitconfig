@@ -30,12 +30,11 @@
   autosetupmerge = always
   autosetuprebase = always
 [merge]
-  tool = chdiff
+  tool = opendiff
   trustExitCode = 0
-[mergetool "filemerge"]
-  cmd = /usr/bin/env chdiff --wait "$LOCAL" "$REMOTE"
-  keepBackup = false
-  trustExitCode = false
+
+[mergetool "opendiff"]
+
 [rerere]
   enabled = 1
 [filter "media"]
@@ -48,3 +47,15 @@
 [include]
   path = ~/.gitconfig.local
 
+[user]
+  name = Sean Dougherty
+  email = seancdougherty@gmail.com
+
+# [difftool "KaleidoscopeKaleidoscope"]
+#   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+# [diff]
+#   tool = Kaleidoscope
+# [difftool]
+#   prompt = false
+# [merge]
+#   tool = Kaleidoscope

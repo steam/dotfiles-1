@@ -86,7 +86,8 @@ settitle() {
 export GIT_PS1_SHOWDIRTYSTATE='true'
 export PS1="\[\033[35m\][\h\[\033[00m\]\[\033[35m\]] \[\033[34m\]\W\[\033[32m\]\$(parse_versions)\[\033[31m\]\$(parse_git_branch)\[\033[00m\] \[\033[0m\]"
 export PS2="\[\033[35m\]→ \[\033[0m\]"
-
+export ***REMOVED***=0024fd25f979d3efa306e7f10aacbc9cb3321c00
+export ***REMOVED***=e450d60bf88abb29992dc8fb14ad86ee723285123b6ca1cbfd798fd8ebfbc952
 
 # Aliases
 # ------------------------------------------
@@ -128,4 +129,3 @@ fi
 if [[ "$-" == *"i"* ]]; then
   echo -e "\033[0;35m------------------------------------------\033[0m"
 fi
-
