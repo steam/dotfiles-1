@@ -47,15 +47,5 @@
 [include]
   path = ~/.gitconfig.local
 
-[user]
-  name = Sean Dougherty
-  email = seancdougherty@gmail.com
-
-# [difftool "KaleidoscopeKaleidoscope"]
-#   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-# [diff]
-#   tool = Kaleidoscope
-# [difftool]
-#   prompt = false
-# [merge]
-#   tool = Kaleidoscope
+[gpg]
+	program = /usr/local/bin/gpg
